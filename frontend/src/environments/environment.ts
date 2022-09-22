@@ -23,5 +23,5 @@
 
 export const environment = {
   production: false,
-  REST_API_URL: 'http://localhost:9966/petclinic/api/'
+  REST_API_URL: 'https://9966-haraldreing-springkeycl-0ymgoxm82f5.ws-eu67.gitpod.io/petclinic/api/'
 };
