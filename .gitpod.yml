@@ -9,7 +9,7 @@ tasks:
 - name: Frontend
   init: |
     cd frontend
-    npm install -g @angular/cli@latest
+    npm install -g @angular/cli@11.2.19
     npm install
   command: |
     cd frontend
