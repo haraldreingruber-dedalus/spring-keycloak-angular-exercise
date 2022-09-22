@@ -1,0 +1,26 @@
+tasks:
+- name: Backend
+  init: |
+    cd backend
+    ./mvnw -B dependency:go-offline package -DskipTests
+  command: |
+    cd backend
+    ./mvnw spring-boot:run
+- name: Frontend
+  init: |
+    cd frontend
+    npm install -g @angular/cli@latest
+    npm install
+  command: |
+    cd frontend
+    ng serve
+
+# exposed ports
+ports:
+- port: 4200
+  onOpen: open-browser # because authentication redirection doesn't seem to work embedded
+
+vscode:
+  extensions:
+    - pivotal.vscode-spring-boot
+    - vscjava.vscode-java-pack
