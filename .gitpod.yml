@@ -9,9 +9,9 @@ tasks:
 - name: Frontend
   init: |
     cd frontend
-    npm install -g @angular/cli@11.2.19
     npm install
   command: |
+    npm install -g @angular/cli@11.2.19
     cd frontend
     ng serve
 
